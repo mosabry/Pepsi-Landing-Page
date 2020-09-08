@@ -1,0 +1,107 @@
+@media all and (max-width: 991px) {
+  section {
+    padding: 40px;
+    padding-bottom: 140px;
+  }
+  section header {
+    padding: 20px 40px;
+  }
+  section header .logo {
+    position: relative;
+    max-width: 60px;
+  }
+  section header ul {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  section header ul li a {
+    display: inline-block;
+    color: #111;
+    font-weight: 400;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  section header ul li a:hover {
+    color: #ed0223;
+  }
+  section header ul.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  section .toggleMenu {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(./images/menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+  }
+  section .toggleMenu.active {
+    background: url(./images/close.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    filter: invert(1);
+  }
+  section .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  section .content .textBox {
+    position: relative;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  section .content .textBox h2 {
+    font-size: 3em;
+  }
+  section .content .textBox a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  section .content .imgBox {
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  section .content .imgBox img {
+    max-width: 150px;
+  }
+  section .thumb li img {
+    max-width: 30px;
+  }
+  section .sci {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
